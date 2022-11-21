@@ -1,0 +1,25 @@
+.header-bg{
+    background: linear-gradient(90deg, rgba(68,86,179,1) 1%, rgba(56,59,145,1) 46%, rgba(39,22,99,1) 100%);
+}
+.history-bg{
+    background-color: #aeaeae;
+}
+.bg-search{
+    background-color: #6991e3;
+}
+.bg-card{
+    background-color: #323d4f;
+}
+.w-20{
+    width: 20%;
+    /* min-width: 20%; */
+    /* max-width: 20%; */
+}
+@media screen and (max-width: 759px) {
+    #cards-container{
+        flex-wrap: wrap;
+    }
+    .w-20{
+        width: 100%;
+    }
+}
