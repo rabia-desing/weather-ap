@@ -10,10 +10,8 @@ input.addEventListener("keypress", function (event) {
 });
 document.getElementById("savedC").addEventListener("click", function (e) {
     if (e.target && e.target.matches("li.history-bg")) {
-        // e.target.className = "foo"; // new class name here
         document.getElementById("cityInput").value = e.target.innerHTML;
         search();
-        // console.log(e.target.innerHTML);
     }
 });
 
@@ -49,6 +47,7 @@ function search() {
             document.getElementById("savedC").innerHTML = listBtn;
         }
         extractCordinates(cityInput);
+        document.getElementById("cityInput").value = "";
     }
 }
 
