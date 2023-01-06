@@ -1,8 +1,19 @@
 .header-bg{
     background: linear-gradient(90deg, rgba(68,86,179,1) 1%, rgba(56,59,145,1) 46%, rgba(39,22,99,1) 100%);
 }
+#res1{
+    background: #3d469e;
+    color: white;
+}
+#res1,#res2{
+    display: none;
+}
 .history-bg{
     background-color: #aeaeae;
+    cursor: pointer;
+}
+.history-bg:hover{
+    background-color: #6991e3;
 }
 .bg-search{
     background-color: #6991e3;
@@ -14,6 +25,10 @@
     width: 20%;
     /* min-width: 20%; */
     /* max-width: 20%; */
+}
+#err{
+    color: red;
+    font-style: bold;
 }
 @media screen and (max-width: 759px) {
     #cards-container{

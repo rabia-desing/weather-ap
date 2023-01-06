@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Weather</title>
 </head>
+
 <body>
     <header class="nav-header header-bg text-center text-white pt-2 pb-2">
         <h1>Weather Dashbard</h1>
@@ -17,28 +19,30 @@
             <section class="col-lg-2 mt-2">
                 <div>
                     <h4 class="text-black"><b> Search for a City:</b></h4>
-                    <input type="text" class="mb-2 pt-2 pb-2 pl-2 w-100" placeholder="San Diego" id="cityInput">
-                    <button class="btn bg-search text-white w-100 pt-1 pb-1" id="search" onClick="search()">Search</button>
+                    <input type="text" class="mb-2 pt-2 pb-2 pl-2 w-100" placeholder="San Diego" id="cityInput"
+                        value="Islamabad">
+                    <p id="err"></p>
+                    <button class="btn bg-search text-white w-100 pt-1 pb-1" id="search"
+                        onClick="search()">Search</button>
                 </div>
                 <hr>
                 <div>
-                    <ul class="list-unstyled">
-                        <li class="history-bg rounded mt-2 mb-2 p-2 text-center" id="savedC"></li>
-                        <li class="history-bg rounded mt-2 mb-2 p-2 text-center">Atlanta</li>
-                        <li class="history-bg rounded mt-2 mb-2 p-2 text-center">Denver</li>
-                        <li class="history-bg rounded mt-2 mb-2 p-2 text-center">Seattle</li>
-                        <li class="history-bg rounded mt-2 mb-2 p-2 text-center">San Francisco</li>
+                    <ul class="list-unstyled" id="savedC">
                     </ul>
                 </div>
             </section>
             <section class="col-lg-9 mt-3">
-                <section class="border border-dark pl-2 ">
-                    <h3>Atlanta (9/13/2022)</h3>
-                    <p>Temp: <span id="toayTemp">76.62</span>&#8451;</p>
+                <section class="border border-dark pl-2 " id="greet">
+                    <h2 class="text-center">Search For Weather</h2>
+                </section>
+                <section class="border border-dark pl-2 " id="res1">
+                    <h3 id="currCity">Atlanta (9/13/2022)</h3>
+                    <img src="" id="currCityImg">
+                    <p>Temp: <span id="toayTemp">76.62</span>&#8451; </p>
                     <P>Wind: <span id="todayWind">8.43</span> MPH</P>
                     <P>Humidity <span id="todayHumid">44</span> %</P>
                 </section>
-                <section class="mt-3">
+                <section class="mt-3" id="res2">
                     <h3><b>5-Day Forecast</b></h3>
                     <div class="d-flex" id="cards-container">
                         <div class="bg-card pl-2 mt-2 mr-4 text-white w-20">
@@ -83,4 +87,5 @@
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
